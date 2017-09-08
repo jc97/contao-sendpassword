@@ -5,7 +5,7 @@ Developed by Julian Knorr.
 ## Synopsis
 
 This is an extension for the Contao Open Source CMS.
-It's main feature is automatically generate random passwords for users and members and sending this password to them by email.
+It's main feature is to automatically generate random passwords for users and members and sending this password to them by email.
 Additionally this extension allows generating usernames for members from first name and last name automatically.
 
 ## Dependencies and languages
