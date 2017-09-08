@@ -19,7 +19,7 @@ This extension supports english and german language in back end and for the emai
 
 ## Installation
 
-To install this extension copy it's file to `system/modules/sendpassword/`. 
+To install this extension copy it's files to `system/modules/sendpassword/`. 
 After that just clear the cache of Contao.
 
 ## Configuration and use
