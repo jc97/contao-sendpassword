@@ -36,12 +36,12 @@ class SendPassword extends \System
 	/**
 	 * Send a password to user by email
 	 *
-	 * @param      $email     The email address
-	 * @param      $name      The name
-	 * @param      $username  The username
-	 * @param      $password  The password (plaintext)
-	 * @param      $interface Indicates whether the user is a back end user or a front end member
-	 * @param null $language  The language
+	 * @param string $email     The email address
+	 * @param string $name      The name
+	 * @param string $username  The username
+	 * @param string $password  The password (plaintext)
+	 * @param int    $interface Indicates whether the user is a back end user or a front end member
+	 * @param null   $language  The language
 	 *
 	 * @return bool
 	 */
@@ -72,7 +72,7 @@ class SendPassword extends \System
 	/**
 	 * Generates a new random password for a member and send this password to the member by email
 	 *
-	 * @param $memberId The id of the member
+	 * @param int $memberId The id of the member
 	 *
 	 * @return bool
 	 */
@@ -93,7 +93,7 @@ class SendPassword extends \System
 	/**
 	 * Generates a new random password for an user and send this password to the user by email
 	 *
-	 * @param $userId The id of the user
+	 * @param int $userId The id of the user
 	 *
 	 * @return bool
 	 */
@@ -228,8 +228,8 @@ class SendPassword extends \System
 	 * Generates a new username from first name and last name.
 	 * This method checks if the username is already in use and adds a number if necessary.
 	 *
-	 * @param $firstname The firstname
-	 * @param $lastname The lastname
+	 * @param string $firstname The firstname
+	 * @param string $lastname  The lastname
 	 *
 	 * @return string|bool An username or false on error
 	 */
@@ -262,7 +262,7 @@ class SendPassword extends \System
 	/**
 	 * Generates a new random password.
 	 *
-	 * @param int $length The length of the password to generate
+	 * @param int  $length            The length of the password to generate
 	 * @param bool $specialCharacters Indicates whether the password contains special characters
 	 *
 	 * @return string A random password
