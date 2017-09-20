@@ -177,6 +177,8 @@ class SendPassword extends \System
 	 */
 	public function sendAllPasswordsToMembers($dc)
 	{
+		if (TL_MODE != 'BE') return;
+		
 		if (!$dc instanceof \DataContainer) {
 			\Controller::redirect($this->getReferer());
 		}
@@ -202,6 +204,8 @@ class SendPassword extends \System
 	 */
 	public function sendAllPasswordsToUsers($dc)
 	{
+		if (TL_MODE != 'BE') return;
+		
 		if (!$dc instanceof \DataContainer) {
 			\Controller::redirect($this->getReferer());
 		}
